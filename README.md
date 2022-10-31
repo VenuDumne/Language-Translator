@@ -56,11 +56,6 @@ if 'hello' in MyText:
 			# Printing Speech which need to
 			# be translated.
 			print("Phase to be Translated :"+ get_sentence)
-
-			# Using translate() method which requires
-			# three arguments, 1st the sentence which
-			# needs to be translated 2nd source language
-			# and 3rd to which we need to translate in
 			text_to_translate = translator.translate(get_sentence,
 													src= from_lang,
 													dest= to_lang)
@@ -82,10 +77,6 @@ if 'hello' in MyText:
 			
 			# Using OS module to run the translated voice.
 			os.system("start captured_voice.mp3")
-
-		# Here we are using except block for UnknownValue
-		# and Request Error and printing the same to
-		# provide better service to the user.
 		except spr.UnknownValueError:
 			print("Unable to Understand the Input")
 			
